@@ -472,7 +472,7 @@ function App() {
                                     marginLeft: '4%',
                                     cursor: 'pointer'
                                 }}>
-                                Goodly Labs
+                                <b>Goodly Labs</b>
                             </button>
                             <br></br> January
                             2024 -- May 2024
