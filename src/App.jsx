@@ -8,7 +8,7 @@ import {useState} from 'react';
 
 function App() {
     function useIsMobile() {
-        return useState(window.innerWidth <= 768);
+        return window.innerWidth <= 768;
     }
     const logos = {
         'linkedIn': 'https://www.linkedin.com/in/farhan-abdulla/',
@@ -100,7 +100,7 @@ function App() {
         );
     };
     document.title = 'Farhan Abdulla';
-    if (!useIsMobile()) {
+    if (useIsMobile()) {
         return (
             <div className="Site" style={{display: 'block'}}>
                 <div className="Contact" style={{
