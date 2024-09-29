@@ -119,7 +119,6 @@ function App() {
                     display: 'block',
                     color: 'white',
                     width: '100%',
-                    marginLeft: '30%',
                     marginTop: '10%'
                 }}>
                     <div style={{marginLeft: '10%'}}>
