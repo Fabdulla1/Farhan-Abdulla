@@ -195,23 +195,25 @@ function App() {
                     <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}>
 
                     </div>
-                    <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
-                        <text style={{color: 'black'}}>
-                            <button
-                                onClick={() => window.open("https://3dtholdings.com/")}
-                                style={{
-                                    color: 'black',
-                                    fontSize: '2vh',
-                                    background: 'transparent',
-                                    marginLeft: '4%',
-                                    cursor: 'pointer'
-                                }}>
-                                <b>3DT Holdings LLC</b>
-                            </button>
-                            <br></br>May 2024 -- August 2024
+                    <div style={{marginLeft: '40%'}}>
+                        <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
+                            <text style={{color: 'black'}}>
+                                <button
+                                    onClick={() => window.open("https://3dtholdings.com/")}
+                                    style={{
+                                        color: 'black',
+                                        fontSize: '2vh',
+                                        background: 'transparent',
+                                        marginLeft: '4%',
+                                        cursor: 'pointer'
+                                    }}>
+                                    <b>3DT Holdings LLC</b>
+                                </button>
+                                <br></br>May 2024 -- August 2024 <br/>
+                                <b style={{marginLeft: '20%', fontSize: '3vh', color: 'white'}}> Software Engineer</b>
+                            </text>
                         </text>
-                        <b style={{marginLeft: '20%', fontSize: '3vh'}}> Software Engineer</b>
-                    </text>
+                    </div>
                     <div style={{
                         font: 'font-sans',
                         fontWeight: 'normal',
@@ -238,25 +240,26 @@ function App() {
                             ))}
                         </div>
                     </div>
-
-                    <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
-                        <text style={{color: 'black'}}>
-                            <button
-                                onClick={() => window.open("https://www.goodlylabs.org/")}
-                                style={{
-                                    color: 'black',
-                                    fontSize: '2vh',
-                                    background: 'transparent',
-                                    marginLeft: '4%',
-                                    cursor: 'pointer'
-                                }}>
-                                Goodly Labs
-                            </button>
-                            <br></br> January
-                            2024 -- May 2024
+                    <div style={{marginLeft: '40%'}}>
+                        <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
+                            <text style={{color: 'black'}}>
+                                <button
+                                    onClick={() => window.open("https://www.goodlylabs.org/")}
+                                    style={{
+                                        color: 'black',
+                                        fontSize: '2vh',
+                                        background: 'transparent',
+                                        marginLeft: '4%',
+                                        cursor: 'pointer'
+                                    }}>
+                                    Goodly Labs
+                                </button>
+                                <br></br> January
+                                2024 -- May 2024 <br/>
+                                <b style={{color: 'white', fontSize: '3vh'}}> Software Engineering Research Intern</b>
+                            </text>
                         </text>
-                        <b style={{marginLeft: '10%', fontSize: '3vh'}}> Software Engineering Research Intern</b>
-                    </text>
+                    </div>
                     <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '20%'}}>
                         <text>
                             Integrated company and user content data using React and Django to enhance AI training
@@ -296,8 +299,7 @@ function App() {
                         <button style={{
                             background: 'rgba(255, 255, 255, 0.3)',
                             backdropFilter: 'blur(5px)',
-                            display: 'flex',
-                            alignItems: 'center',
+                            display: 'block',
                             width: '100%',
                             transition: 'transform 0.3s ease',
                             border: 'transparent'
