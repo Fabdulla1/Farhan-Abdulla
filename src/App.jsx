@@ -339,7 +339,7 @@ function App() {
                     color: 'white',
                     width: '50%',
                     marginLeft: '5%',
-                    marginTop: '10%'
+                    marginBottom: '20%'
                 }}>
                     <div style={{marginLeft: '10%'}}>
                         <img src={pfp} alt="Farhan Abdulla" style={{
