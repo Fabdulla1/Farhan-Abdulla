@@ -1,8 +1,9 @@
 import linkedIn from './assets/linkedin.png';
 import github from './assets/github.png';
-import cafeFrog from './assets/cafeFrog.mp4';
+import cafeFrog from './assets/cafeFrog.mov';
 import pfp from './assets/pfp.jpg'
 import {TypeAnimation} from "react-type-animation";
+import resume from './assets/resume.pdf';
 
 function App() {
     const logos = {
@@ -36,7 +37,7 @@ function App() {
     const HeaderButtons = ({caption, onClick}) => {
         return (
             <button style={{font: 'font-sans', fontSize: '2vh', fontWeight: 'normal',
-                backgroundColor: 'transparent', color: 'gray'}} onClick={onClick}>
+                backgroundColor: 'transparent', color: 'black'}} onClick={onClick}>
                 {caption}
             </button>
         )
@@ -44,24 +45,71 @@ function App() {
     // eslint-disable-next-line react/prop-types
     const LogoButtons = ({image, onClick}) => {
         return (
-            <button style={{backgroundColor: 'transparent'}} onClick={onClick}>
-                <img src={image} alt={image} />
+            <button style={{backgroundColor: 'transparent', border: 'transparent',
+                padding: '5px',
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease'
+            }}
+                onClick={onClick}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+                <img src={image} alt={image} style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain'
+                }} />
             </button>
         )
-    }
-    document.body.style = 'background: #0A2E36'
+    };
+    const NeonSquare = ({ text }) => {
+        return (
+            <button style={{
+                display: 'inline-block',
+                background: '#dad7cd',
+                borderRadius: '10%',
+                border: 'transparent',
+                cursor:'default',
+                margin: '5px',
+                fontSize: '1.5vh',
+                color: 'black',
+                fontWeight: 'bold',
+                textAlign: 'center',
+            }}
+            >
+                {text}
+            </button>
+        );
+    };
+    const skills = {'g' : ['Python', 'Django', 'React'], '3':['Python', 'Kivy', 'Arduino', 'C++', 'Raspberry-Pi'], 'c' : ['Python', 'PyGame', 'Scikit-Learn']}
+    const ResumeButton = () => {
+        const openResume = () => {
+            window.open(resume, '_blank');
+        };
+
+        return (
+            <button onClick={openResume} style={{background: '#a3b18a', color: 'white', borderRadius: '5px', cursor: 'pointer',
+                marginLeft: '50%', marginTop: '10%'
+            }}>
+                View Resume
+            </button>
+        );
+    };
     document.title = 'Farhan Abdulla';
     return (
-        <div className="Site">
+        <div className="Site" style={{display: 'flex', flexDirection: 'column'}}>
             <div className="Contact" style={{
                 display: 'block',
                 position: 'fixed',
                 color: 'white',
                 width: '50%',
-                marginLeft: '5%'
+                marginLeft: '5%',
+                marginTop: '10%'
             }}>
                 <div style={{marginLeft:'10%'}}>
-                    <img src={pfp} alt="Farhan Abdulla" style={{height:'30%', width: '30%', borderRadius: '50%'}}/>
+                    <img src={pfp} alt="Farhan Abdulla" style={{height:'20%', width: '20%', borderRadius: '50%',
+                    marginLeft: '10%'
+                    }}/>
                 </div>
                 <text style={{ font:'font-sans', fontSize: '10vh', fontWeight: 'bold'}}>
                     Farhan Abdulla
@@ -103,31 +151,43 @@ function App() {
 
             <div className="About Me" id={'About'} style={{
                 display: "block", width: '50%',
-                alignItems: 'end', minHeight: '80vh', overflowY: 'auto', marginLeft: '50%'
+                alignItems: 'end', minHeight: '80vh', overflowY: 'auto', marginLeft: '50%', marginTop: '10%'
             }}>
                 <text style={{font: 'font-sans', fontWeight: 'normal', color: 'whitesmoke', fontSize: '3vh'}}>
-                    My name is Farhan Abdulla and I am an undergraduate student at <b> UC Berkeley </b> set to graduate
+                    Welcome! My name is Farhan Abdulla and I am an undergraduate student at UC Berkeley set to
+                    graduate
                     in May 2025. I am studying Data Science, with an emphasis in Business and Industrial Analytics, and
                     a minor in Computer Science. Although I may be an undergraduate, I hold strong experience in
-                    creating software solutions as seen in my prior work. I began my career as a <b> Software
-                    Engineer Research Intern </b> at <a href={"https://www.goodlylabs.org/"}><b> Goodly
-                    Labs</b></a> where I worked on
-                    improving data variability for training models. Afterwards, I was contracted as a <b> Software
-                    Engineer </b> at
-                    <a href={"https://3dtholdings.com/"}><b> 3DT Holdings LLC</b></a> where I built the world's first
-                    python based touchscreen application for an industrial dip coating machine. I am open to software
-                    engineering roles or data science roles. I look forward to speaking with you!
+                    creating software solutions as seen in my prior work. <br/><br/> I began my career as a <b> Software
+                    Engineer Research Intern </b> at <a href={"https://www.goodlylabs.org/"}
+                                                        style={{color: 'black'}}><b> Goodly Labs</b></a>
+                    where I worked on improving data variability for training models. Afterwards, I was contracted as
+                    a <b> Software
+                    Engineer </b> at <a href={"https://3dtholdings.com/"} style={{color: 'black'}}><b> 3DT Holdings
+                    LLC</b></a> where I
+                    built the world's first python based touchscreen application for an industrial dip coating
+                    machine.<br/><br/>
+                    When I'm not programming you can catch me writing poetry and performing poetry here at Berkeley.
+                    I am open to software engineering roles or data science roles. I look forward to speaking with you!
                 </text>
                 <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}>
-                    <text style={{
-                        font: 'font-sans', fontWeight: 'normal', color: 'white',
-                        fontSize: '4vh', marginLeft: '50%'
-                    }}>
-                        Experience
-                    </text>
+
                 </div>
                 <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
-                    <text style={{color: 'gray'}}>May 2024 -- August 2024</text>
+                    <text style={{color: 'black'}}>
+                        <button
+                            onClick={() => window.open("https://3dtholdings.com/")}
+                            style={{
+                                color: 'black',
+                                fontSize: '2vh',
+                                background: 'transparent',
+                                marginLeft: '4%',
+                                cursor: 'pointer'
+                            }}>
+                            <b>3DT Holdings LLC</b>
+                        </button>
+                        <br></br>May 2024 -- August 2024
+                    </text>
                     <b style={{marginLeft: '20%', fontSize: '3vh'}}> Software Engineer</b>
                 </text>
                 <div style={{
@@ -140,27 +200,60 @@ function App() {
                     <text>
                         Designed, developed, and deployed a pioneering touchscreen application for an industrial dip
                         coating
-                        machine using Python's Kivy library. Optimized motor control by programming Arduino sketches in
+                        machine using Python's Kivy library. Optimized motor control by programming Arduino sketches
+                        in
                         C++
-                        and improving motor-software communication via serial protocols, reducing motor response time by
+                        and improving motor-software communication via serial protocols, reducing motor response
+                        time by
                         2 seconds. Led cross-functional collaboration with machine builders through 12 test runs,
                         ensuring
                         seamless software-hardware integration and minimizing system errors by troubleshooting and
                         resolving bugs.
                     </text>
+                    <div>
+                        {skills['3'].map((skill, index) => (
+                            <NeonSquare key={index} text={skill}/>
+                        ))}
+                    </div>
                 </div>
+
                 <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
-                    <text style={{color: 'gray'}}>January 2024 -- May 2024</text>
+                    <text style={{color: 'black'}}>
+                        <button
+                            onClick={() => window.open("https://www.goodlylabs.org/")}
+                            style={{
+                                color: 'black',
+                                fontSize: '2vh',
+                                background: 'transparent',
+                                marginLeft: '4%',
+                                cursor: 'pointer'
+                            }}>
+                            Goodly Labs
+                        </button>
+                        <br></br> January
+                        2024 -- May 2024
+                    </text>
                     <b style={{marginLeft: '10%', fontSize: '3vh'}}> Software Engineering Research Intern</b>
                 </text>
                 <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '20%'}}>
                     <text>
-                        Integrated company and user content data using React and Django to enhance AI training datasets.
+                        Integrated company and user content data using React and Django to enhance AI training
+                        datasets.
                         Led a team of three, managing workflow and communication with the project manager. Cleaned
-                        Twitter data via API and PANDAS, improving data variance and bias in AI models. Presented the
-                        work at UC Berkeley’s Data Science Discovery Program Symposium, earning the Best in Show award
+                        Twitter data via API and PANDAS, improving data variance and bias in AI models. Presented
+                        the
+                        work at UC Berkeley’s Data Science Discovery Program Symposium, earning the Best in Show
+                        award
                         for tackling misinformation.
                     </text>
+                    <div>
+                        {skills['g'].map((skill, index) => (
+                            <NeonSquare key={index} text={skill}/>
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <ResumeButton/>
                 </div>
                 <div className={'Projects'} style={{marginTop: '40%'}} id={'Projects'}>
                     <text style={{
@@ -177,17 +270,36 @@ function App() {
                         CAFE FROG
                     </text>
                 </div>
-                <div>
-                    <video src={cafeFrog} muted autoPlay style={{height: '100%', width: '100%', borderRadius: '60%'}}></video>
-                </div>
-                <div>
-                    <text style={{color: 'whitesmoke'}}>
-                        Led a cross-functional team of 7 in developing, designing, and marketing a video game using
-                        Python's PyGame library. Managing workflows, led a programming team of 3, and implemented a
-                        machine learning model for NPC chatbots using the Naive Bayes Algorithm. The game is still yet
-                        to be completed but we are 50% of the way done.
-
-                    </text>
+                <div style={{marginBottom: '20%', marginRight: '5%', marginLeft: '5%'}}>
+                    <button style={{
+                        background: 'rgba(255, 255, 255, 0.3)',
+                        backdropFilter: 'blur(5px)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        width: '100%',
+                        transition: 'transform 0.3s ease',
+                        border: 'transparent'
+                    }}
+                            onClick={() => {
+                                window.open('https://github.com/Fabdulla1/CafeFrog', '_blank');
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.01)'}
+                            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    >
+                        <video src={cafeFrog} muted autoPlay
+                               style={{height: 'auto', width: '50%', borderRadius: '2%'}}></video>
+                        <div style={{color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
+                            Led a cross-functional team of 7 in developing, designing, and marketing a video game
+                            using
+                            Python's PyGame library.
+                            Managing workflows, led a programming team of 3, and implemented a machine learning
+                            model
+                            for NPC chatbots using
+                            the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of the
+                            way
+                            done.
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
