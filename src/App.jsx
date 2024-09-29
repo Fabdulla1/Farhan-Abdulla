@@ -4,11 +4,23 @@ import cafeFrog from './assets/cafeFrog.mov';
 import pfp from './assets/pfp.jpg'
 import {TypeAnimation} from "react-type-animation";
 import resume from './assets/resume.pdf';
-import {useState} from 'react';
-
+import { useState, useEffect } from 'react';
 function App() {
     function useIsMobile() {
-        return window.innerWidth <= 768;
+        const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+
+        useEffect(() => {
+            const handleResize = () => {
+                setIsMobile(window.innerWidth <= 500);
+            };
+
+            window.addEventListener('resize', handleResize);
+
+            // Cleanup the event listener when the component is unmounted
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return isMobile;
     }
     const logos = {
         'linkedIn': 'https://www.linkedin.com/in/farhan-abdulla/',
