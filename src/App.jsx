@@ -510,9 +510,6 @@ function App() {
                     <div style={{
                         font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '40%'
                     }}>
-                        <text>
-                            CAFE FROG
-                        </text>
                     </div>
                     <div style={{marginBottom: '20%', marginRight: '5%', marginLeft: '5%'}}>
                         <button style={{
@@ -532,16 +529,21 @@ function App() {
                         >
                             <video src={cafeFrog} muted autoPlay
                                    style={{height: 'auto', width: '50%', borderRadius: '2%'}}></video>
-                            <div style={{color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
-                                Led a cross-functional team of 7 in developing, designing, and marketing a video game
-                                using
-                                Python's PyGame library.
-                                Managing workflows, led a programming team of 3, and implemented a machine learning
-                                model
-                                for NPC chatbots using
-                                the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of the
-                                way
-                                done.
+                            <div style={{display: 'block', color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
+                                <text style={{color: 'black'}}>
+                                    <b>CAFE FROG </b>
+                                </text>
+                                <br/>
+                                <text>
+                                    Leading a cross-functional team of 7 in developing, designing, and marketing a video game
+                                    using
+                                    Python's PyGame library.
+                                    Managing workflows, leading a programming team of 3, and implementing a machine learning
+                                    model for NPC chatbots using
+                                    the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of the
+                                    way
+                                    done!
+                                </text>
                             </div>
                         </button>
                     </div>
