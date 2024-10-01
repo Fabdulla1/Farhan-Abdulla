@@ -102,14 +102,22 @@ function App() {
         const openResume = () => {
             window.open(resume, '_blank');
         };
-
+        if (useIsMobile()) {
+            return (
+                <button onClick={openResume} style={{background: '#a3b18a', color: 'white', borderRadius: '5px', cursor: 'pointer',
+                    marginTop: '10%'
+                }}>
+                    View Resume
+                </button>
+            );
+        } else {
         return (
             <button onClick={openResume} style={{background: '#a3b18a', color: 'white', borderRadius: '5px', cursor: 'pointer',
                 marginLeft: '50%', marginTop: '10%'
             }}>
                 View Resume
             </button>
-        );
+        );}
     };
     document.title = 'Farhan Abdulla';
     if (useIsMobile()) {
@@ -192,10 +200,8 @@ function App() {
                         I am open to software engineering roles or data science roles. I look forward to speaking with
                         you!
                     </text>
-                    <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}>
-
-                    </div>
-                    <div style={{marginLeft: '40%'}}>
+                    <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}></div>
+                    <div>
                         <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
                             <text style={{color: 'black'}}>
                                 <button
@@ -210,7 +216,7 @@ function App() {
                                     <b>3DT Holdings LLC</b>
                                 </button>
                                 <br></br>May 2024 -- August 2024 <br/>
-                                <b style={{marginLeft: '20%', fontSize: '3vh', color: 'white'}}> Software Engineer</b>
+                                <b style={{ fontSize: '3vh', color: 'white'}}> Software Engineer</b>
                             </text>
                         </text>
                     </div>
@@ -218,7 +224,6 @@ function App() {
                         font: 'font-sans',
                         fontWeight: 'normal',
                         color: 'white',
-                        marginLeft: '20%',
                         marginBottom: '20%'
                     }}>
                         <text>
@@ -240,7 +245,7 @@ function App() {
                             ))}
                         </div>
                     </div>
-                    <div style={{marginLeft: '40%'}}>
+                    <div>
                         <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
                             <text style={{color: 'black'}}>
                                 <button
@@ -249,7 +254,6 @@ function App() {
                                         color: 'black',
                                         fontSize: '2vh',
                                         background: 'transparent',
-                                        marginLeft: '4%',
                                         cursor: 'pointer'
                                     }}>
                                     Goodly Labs
@@ -260,7 +264,7 @@ function App() {
                             </text>
                         </text>
                     </div>
-                    <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '20%'}}>
+                    <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
                         <text>
                             Integrated company and user content data using React and Django to enhance AI training
                             datasets.
@@ -288,13 +292,6 @@ function App() {
                             Projects
                         </text>
                     </div>
-                    <div style={{
-                        font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '40%'
-                    }}>
-                        <text>
-                            CAFE FROG
-                        </text>
-                    </div>
                     <div style={{marginBottom: '20%', marginRight: '5%', marginLeft: '5%'}}>
                         <button style={{
                             background: 'rgba(255, 255, 255, 0.3)',
@@ -312,6 +309,9 @@ function App() {
                         >
                             <video src={cafeFrog} muted autoPlay
                                    style={{height: 'auto', width: '50%', borderRadius: '2%'}}></video>
+                            <div>
+                                <b>Cafe Frog</b>
+                            </div>
                             <div style={{color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
                                 Led a cross-functional team of 7 in developing, designing, and marketing a video game
                                 using
