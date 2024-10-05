@@ -431,15 +431,14 @@ function App() {
                                 style={{
                                     color: 'black',
                                     fontSize: '2vh',
-                                    background: 'transparent',
-                                    marginLeft: '4%',
+                                    background: 'white',
                                     cursor: 'pointer'
                                 }}>
                                 <b>3DT Holdings LLC</b>
                             </button>
                             <br></br>May 2024 -- August 2024
                         </text>
-                        <b style={{marginLeft: '20%', fontSize: '3vh'}}> Software Engineer</b>
+                        <b style={{marginLeft: '20%', fontSize: '3vh', color: 'black'}}> Software Engineer</b>
                     </text>
                     <div style={{
                         font: 'font-sans',
@@ -475,8 +474,7 @@ function App() {
                                 style={{
                                     color: 'black',
                                     fontSize: '2vh',
-                                    background: 'transparent',
-                                    marginLeft: '4%',
+                                    background: 'white',
                                     cursor: 'pointer'
                                 }}>
                                 <b>Goodly Labs</b>
@@ -484,7 +482,7 @@ function App() {
                             <br></br> January
                             2024 -- May 2024
                         </text>
-                        <b style={{marginLeft: '10%', fontSize: '3vh'}}> Software Engineering Research Intern</b>
+                        <b style={{marginLeft: '10%', fontSize: '3vh', color: 'black'}}> Software Engineering Research Intern</b>
                     </text>
                     <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '20%'}}>
                         <text>
