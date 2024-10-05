@@ -207,19 +207,19 @@ function App() {
                     <div>
                         <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
                             <text style={{color: 'black'}}>
+                                <b style={{fontSize: '3vh', color: 'black'}}> Software Engineer </b><br></br>
                                 <button
                                     onClick={() => window.open("https://3dtholdings.com/")}
                                     style={{
                                         color: 'black',
                                         fontSize: '2vh',
-                                        background: 'transparent',
-                                        marginLeft: '4%',
+                                        background: 'white',
                                         cursor: 'pointer'
                                     }}>
                                     <b>3DT Holdings LLC</b>
                                 </button>
                                 <br></br>May 2024 -- August 2024 <br/>
-                                <b style={{ fontSize: '3vh', color: 'white'}}> Software Engineer</b>
+
                             </text>
                         </text>
                     </div>
@@ -251,19 +251,20 @@ function App() {
                     <div>
                         <text style={{font: 'font-sans', fontWeight: 'normal', color: 'white'}}>
                             <text style={{color: 'black'}}>
+                                <b style={{color: 'black', fontSize: '3vh'}}> Software Engineering Research
+                                    Intern</b><br></br>
                                 <button
                                     onClick={() => window.open("https://www.goodlylabs.org/")}
                                     style={{
                                         color: 'black',
                                         fontSize: '2vh',
-                                        background: 'transparent',
+                                        background: 'white',
                                         cursor: 'pointer'
                                     }}>
-                                    Goodly Labs
+                                    <b>Goodly Labs</b>
                                 </button>
                                 <br></br> January
                                 2024 -- May 2024 <br/>
-                                <b style={{color: 'white', fontSize: '3vh'}}> Software Engineering Research Intern</b>
                             </text>
                         </text>
                     </div>
@@ -290,7 +291,7 @@ function App() {
                     <div className={'Projects'} style={{marginTop: '40%'}} id={'Projects'}>
                         <text style={{
                             font: 'font-sans', fontWeight: 'normal', color: 'white',
-                            fontSize: '4vh', marginLeft: '40%'
+                            fontSize: '4vh', marginLeft: '30%'
                         }}>
                             Projects
                         </text>
@@ -313,7 +314,7 @@ function App() {
                             <video src={cafeFrog} muted autoPlay
                                    style={{height: 'auto', width: '50%', borderRadius: '2%'}}></video>
                             <div>
-                                <b>Cafe Frog</b>
+                                <b style={{color:'black'}}>Cafe Frog</b>
                             </div>
                             <div style={{color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
                                 Led a cross-functional team of 7 in developing, designing, and marketing a video game
