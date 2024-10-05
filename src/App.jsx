@@ -184,21 +184,24 @@ function App() {
                         graduate
                         in May 2025. I am studying Data Science, with an emphasis in Business and Industrial Analytics,
                         and
-                        a minor in Computer Science. Although I may be an undergraduate, I hold strong experience in
-                        creating software solutions as seen in my prior work. <br/><br/> I began my career as
+                        a minor in Computer Science. Despite being an undergrad, I have strong experience in
+                        creating software solutions as seen in my prior work. <br/><br/> I started my career as
                         a <b> Software
                         Engineer Research Intern </b> at <a href={"https://www.goodlylabs.org/"}
-                                                            style={{color: 'black'}}><b> Goodly Labs</b></a>
-                        where I worked on improving data variability for training models. Afterwards, I was contracted
+                                                            style={{color: 'black'}}><b> Goodly Labs </b></a>
+                        where I helped improve bias and variance of their AI model. Afterwards, I was contracted
                         as
                         a <b> Software
                         Engineer </b> at <a href={"https://3dtholdings.com/"} style={{color: 'black'}}><b> 3DT Holdings
-                        LLC</b></a> where I
+                        LLC </b></a> where I
                         built the world's first python based touchscreen application for an industrial dip coating
                         machine.<br/><br/>
-                        When I'm not programming you can catch me writing poetry and performing poetry here at Berkeley.
-                        I am open to software engineering roles or data science roles. I look forward to speaking with
-                        you!
+                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
+                        for hikes around the bay area!
+                        <br/><br/>
+                        As of lately, I have been open to full-time roles as a software engineering or data scientist.
+                        Feel free to explore my website to see some of my work, and don’t hesitate to reach out if you’d
+                        like to connect!
                     </text>
                     <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}></div>
                     <div>
@@ -398,21 +401,24 @@ function App() {
                         graduate
                         in May 2025. I am studying Data Science, with an emphasis in Business and Industrial Analytics,
                         and
-                        a minor in Computer Science. Although I may be an undergraduate, I hold strong experience in
-                        creating software solutions as seen in my prior work. <br/><br/> I began my career as
+                        a minor in Computer Science. Despite being an undergrad, I have strong experience in
+                        creating software solutions as seen in my prior work. <br/><br/> I started my career as
                         a <b> Software
                         Engineer Research Intern </b> at <a href={"https://www.goodlylabs.org/"}
-                                                            style={{color: 'black'}}><b> Goodly Labs</b></a>
-                        where I worked on improving data variability for training models. Afterwards, I was contracted
+                                                            style={{color: 'black'}}><b> Goodly Labs </b></a>
+                        where I helped improve bias and variance of their AI model. Afterwards, I was contracted
                         as
                         a <b> Software
                         Engineer </b> at <a href={"https://3dtholdings.com/"} style={{color: 'black'}}><b> 3DT Holdings
-                        LLC</b></a> where I
+                        LLC </b></a> where I
                         built the world's first python based touchscreen application for an industrial dip coating
                         machine.<br/><br/>
-                        When I'm not programming you can catch me writing poetry and performing poetry here at Berkeley.
-                        I am open to software engineering roles or data science roles. I look forward to speaking with
-                        you!
+                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
+                        for hikes around the bay area!
+                        <br/><br/>
+                        As of lately, I have been open to full-time roles as a software engineering or data scientist.
+                        Feel free to explore my website to see some of my work, and don’t hesitate to reach out if you’d
+                        like to connect!
                     </text>
                     <div className={'Experience'} style={{marginTop: '40%'}} id={'Experience'}>
 
