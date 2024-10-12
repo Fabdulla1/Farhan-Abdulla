@@ -199,7 +199,7 @@ function App() {
                         When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
                         for hikes around the bay area!
                         <br/><br/>
-                        As of lately, I have been open to full-time roles as a software engineering or data scientist.
+                        As of lately, I have been open to full-time roles as a software engineer or data scientist.
                         Feel free to explore my website to see some of my work, and don’t hesitate to reach out if you’d
                         like to connect!
                     </text>
@@ -417,7 +417,7 @@ function App() {
                         When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
                         for hikes around the bay area!
                         <br/><br/>
-                        As of lately, I have been open to full-time roles as a software engineering or data scientist.
+                        As of lately, I have been open to full-time roles as a software engineer or data scientist.
                         Feel free to explore my website to see some of my work, and don’t hesitate to reach out if you’d
                         like to connect!
                     </text>
