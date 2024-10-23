@@ -4,6 +4,7 @@ import cafeFrog from './assets/cafeFrog.mov';
 import pfp from './assets/pfp.jpg'
 import {TypeAnimation} from "react-type-animation";
 import resume from './assets/resume.pdf';
+import emotionfy from './assets/emotionfy.jpg'
 import { useState, useEffect } from 'react';
 function App() {
     function useIsMobile() {
@@ -196,7 +197,8 @@ function App() {
                         LLC </b></a> where I
                         built the world's first python based touchscreen application for an industrial dip coating
                         machine.<br/><br/>
-                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
+                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or
+                        going
                         for hikes around the bay area!
                         <br/><br/>
                         As of lately, I have been open to full-time roles as a software engineer or data scientist.
@@ -303,7 +305,8 @@ function App() {
                             display: 'block',
                             width: '100%',
                             transition: 'transform 0.3s ease',
-                            border: 'transparent'
+                            border: 'transparent',
+                            marginBottom: '10%'
                         }}
                                 onClick={() => {
                                     window.open('https://github.com/Fabdulla1/CafeFrog', '_blank');
@@ -314,7 +317,7 @@ function App() {
                             <video src={cafeFrog} muted autoPlay
                                    style={{height: 'auto', width: '50%', borderRadius: '2%'}}></video>
                             <div>
-                                <b style={{color:'black'}}>Cafe Frog</b>
+                                <b style={{color: 'black'}}>Cafe Frog</b>
                             </div>
                             <div style={{color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
                                 Led a cross-functional team of 7 in developing, designing, and marketing a video game
@@ -326,6 +329,43 @@ function App() {
                                 the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of the
                                 way
                                 done.
+                            </div>
+                        </button>
+                        <button style={{
+                            background: 'rgba(255, 255, 255, 0.3)',
+                            backdropFilter: 'blur(5px)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            width: '100%',
+                            transition: 'transform 0.3s ease',
+                            border: 'transparent'
+                        }}
+                                onClick={() => {
+                                    window.open('https://github.com/Fabdulla1/Emotionfy', '_blank');
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.01)'}
+                                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        >
+                            <img src={emotionfy}
+                                 style={{height: 'auto', width: '50%', borderRadius: '2%'}}></img>
+                            <div style={{display: 'block', color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
+                                <text style={{color: 'black'}}>
+                                    <b> Emotionfy </b>
+                                </text>
+                                <br/>
+                                <text>
+                                    Developed Emotionfy, a web application that uses Hume AI’s text-to-expression model
+                                    to analyze user input and generate mood-based Spotify playlists via Spotify’s API.
+                                    Overcame challenges in team collaboration, including teammates dropping out
+                                    mid-project
+                                    and roadblocks in idea development, by adapting quickly and completing the project
+                                    under a strict time constraint. Learned and implemented the Reflex web development
+                                    framework to handle frontend, backend, and deployment using Python.
+                                    Designed and structured the web application efficiently, picking up new syntax and
+                                    tools rapidly. Demonstrated problem-solving, teamwork, and resilience, working
+                                    closely
+                                    with a teammate to complete the project successfully under pressure.
+                                </text>
                             </div>
                         </button>
                     </div>
@@ -414,7 +454,8 @@ function App() {
                         LLC </b></a> where I
                         built the world's first python based touchscreen application for an industrial dip coating
                         machine.<br/><br/>
-                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or going
+                        When I'm not programming you can catch me writing and performing poetry here at Berkeley or
+                        going
                         for hikes around the bay area!
                         <br/><br/>
                         As of lately, I have been open to full-time roles as a software engineer or data scientist.
@@ -482,7 +523,8 @@ function App() {
                             <br></br> January
                             2024 -- May 2024
                         </text>
-                        <b style={{marginLeft: '10%', fontSize: '3vh', color: 'black'}}> Software Engineering Research Intern</b>
+                        <b style={{marginLeft: '10%', fontSize: '3vh', color: 'black'}}> Software Engineering Research
+                            Intern</b>
                     </text>
                     <div style={{font: 'font-sans', fontWeight: 'normal', color: 'white', marginLeft: '20%'}}>
                         <text>
@@ -524,7 +566,8 @@ function App() {
                             alignItems: 'center',
                             width: '100%',
                             transition: 'transform 0.3s ease',
-                            border: 'transparent'
+                            border: 'transparent',
+                            marginBottom: '10%'
                         }}
                                 onClick={() => {
                                     window.open('https://github.com/Fabdulla1/CafeFrog', '_blank');
@@ -540,14 +583,49 @@ function App() {
                                 </text>
                                 <br/>
                                 <text>
-                                    Leading a cross-functional team of 7 in developing, designing, and marketing a video game
+                                    Leading a cross-functional team of 7 in developing, designing, and marketing a video
+                                    game
                                     using
                                     Python's PyGame library.
-                                    Managing workflows, leading a programming team of 3, and implementing a machine learning
+                                    Managing workflows, leading a programming team of 3, and implementing a machine
+                                    learning
                                     model for NPC chatbots using
-                                    the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of the
+                                    the Naive Bayes Algorithm. The game is still yet to be completed but we are 50% of
+                                    the
                                     way
                                     done!
+                                </text>
+                            </div>
+                        </button>
+                        <button style={{
+                            background: 'rgba(255, 255, 255, 0.3)',
+                            backdropFilter: 'blur(5px)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            width: '100%',
+                            transition: 'transform 0.3s ease',
+                            border: 'transparent'
+                        }}
+                                onClick={() => {
+                                    window.open('https://github.com/Fabdulla1/Emotionfy', '_blank');
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.01)'}
+                                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        >
+                            <img src={emotionfy}
+                                   style={{height: 'auto', width: '50%', borderRadius: '2%'}}></img>
+                            <div style={{display: 'block', color: 'whitesmoke', marginLeft: '5%', width: '80%'}}>
+                                <text style={{color: 'black'}}>
+                                    <b> Emotionfy </b>
+                                </text>
+                                <br/>
+                                <text>
+                                    Developed Emotionfy, a web application that uses Hume AI’s text-to-expression model
+                                    to analyze user input and generate mood-based Spotify playlists via Spotify’s API.
+                                    Learned and implemented the Reflex web development
+                                    framework to handle frontend, backend, and deployment using Python.
+                                    Designed and structured the web application efficiently, picking up new syntax and
+                                    tools rapidly.
                                 </text>
                             </div>
                         </button>
